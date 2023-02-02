@@ -1,0 +1,24 @@
+
+<section class="container border border-warning border-2 p-3 mb-4">
+    <section *ngFor="let item of datos_json" >
+
+        <section *ngIf="item.ID==numero">
+        <h2 class="text-center">PRODUCTO NRO: {{item.ID}}</h2>   
+        <label for="" class="form-label">Código de barras:</label>
+        <input type="text" class="form-control" value={{item.Codigo}}>
+
+        <label for="" class="form-label mt-3">Descripción:</label>
+        <input type="text" class="form-control" value={{item.Descripcion}}>
+
+        <label for="" class="form-label mt-3">Precio de venta:</label>
+        <input type="text" class="form-control" value={{item.Pventa}}>
+
+        <label for="" class="form-label mt-3">Precio de compra:</label>
+        <input type="text" class="form-control" value={{item.Pcompra}}>
+
+        <label for="" class="form-label mt-3">Existencia:</label>
+        <input type="text" class="form-control" value={{item.Existencia}}>
+        </section>
+    </section>
+</section>
+    

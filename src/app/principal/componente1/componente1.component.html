@@ -1,0 +1,28 @@
+<section class="container-fluid">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Código</th>
+                <th>Descripción</th>
+                <th>Precio de compra</th>
+                <th>Precio de venta</th>
+                <th>Ganancia</th>
+                <th>Existencia</th>
+                <th>Editar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of dato; let i=index">
+                <td>{{item.ID}}</td>
+                <td>{{item.Codigo}}</td>
+                <td>{{item.Descripcion}}</td>
+                <td>{{item.Pcompra}}</td>
+                <td>{{item.Pventa}}</td>
+                <td>{{item.Ganancia}}</td>
+                <td>{{item.Existencia}}</td>
+                <td><a href="/componente1/{{dato | json}}/{{i+1}}/vista"> <img src="https://img.icons8.com/external-febrian-hidayat-flat-febrian-hidayat/512/external-Edit-user-interface-febrian-hidayat-flat-febrian-hidayat.png"></a></td> 
+        </tbody>
+    </table>
+</section>
+
